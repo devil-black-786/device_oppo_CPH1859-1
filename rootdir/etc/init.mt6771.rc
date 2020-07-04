@@ -1187,6 +1187,16 @@ on boot
     chown system graphics /sys/module/primary_display/parameters/display_framerate_main
     chmod 0666 /sys/module/primary_display/parameters/display_framerate_main
 
+service set_zram /vendor/bin/sh /system/etc/init/set_zram.sh
+    class late_start
+    disabled
+    user root
+    group system
+    oneshot
+
+on property:sys.boot_completed=1
+    start set_zram 
+
 #set the property of persiste.radio.reset_on_switch
 setprop persist.radio.reset_on_switch false
 #end
