@@ -1938,9 +1938,9 @@ bin/iwpriv
 
 # WiFi - from full_oppo6771-user 10 QP1A.190711.020 08805472cb0b87b3 release-keys
 -framework/mtk-wifi-service.jar|1b4828542770a0e290b7a4ee328b9215da65dce7
-vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek|d7e8875ddf1728d4245da62e5c6ed5994d1483a5
-vendor/bin/hw/hostapd|7eaa2f5374b1334cafc353b7eba1e07429e55f4a
-vendor/bin/hw/wpa_supplicant|63075c4cf8e650c322a3823ba60b1ec1c64d8ac6
+vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek|a62303760f445b33dc77bfb3e2764b1045d3d498
+vendor/bin/hw/hostapd|0ea6b47f17fa2a9e09c6869baefeb301baa29464
+vendor/bin/hw/wpa_supplicant|1bbf4ecde7e0193820110b9f737ee00623567baa
 vendor/bin/hostapd_cli|8e705105b231ae27cc15a13cb83ae5a4674b4bff
 vendor/bin/stp_dump3|c31fc952a790bc6d5f77b947fb98b8a464ee6ad2
 vendor/bin/wlan_assistant|c8b12ac856e0da3d6258e5d29a12c70ae76e3851
