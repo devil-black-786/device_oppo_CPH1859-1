@@ -1229,6 +1229,13 @@ service osi /system/bin/osi
     oneshot
     #seclabel u:r:osi:s0
 
+service charger /bin/chargeonlymode
+    class charger
+    critical
+    #seclabel u:r:charger:s0
+    group system graphics
+    seclabel u:r:healthd:s0
+
 #ifdef VENDOR_EDIT
 #zhoumingjun@swdp2.shanghai 2018/07/19, Add for run the init.oppo.kneuron.sh on property
 service kneuron_context /system/bin/sh /system/etc/init.oppo.kneuron.sh

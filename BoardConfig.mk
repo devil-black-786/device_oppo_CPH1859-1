@@ -57,6 +57,9 @@ USE_XML_AUDIO_POLICY_CONF := 1
 TARGET_BOOTLOADER_BOARD_NAME := oppo6771_17065
 TARGET_NO_BOOTLOADER := true
 
+# Charger
+BOARD_CHARGER_ENABLE_SUSPEND := true
+
 # Display
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
@@ -125,6 +128,8 @@ TARGET_USES_INTERACTION_BOOST := true
 
 # SEPolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
