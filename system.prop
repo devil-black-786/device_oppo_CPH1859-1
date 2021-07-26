@@ -47,6 +47,16 @@ ro.mtk_tetheringipv6_support=1
 # Playstore
 ro.com.google.clientidbase=android-oppo
 
+# Dex2oat
+dalvik.vm.image-dex2oat-filter=quicken 
+dalvik.vm.image-dex2oat-threads=8 
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 
+dalvik.vm.dex2oat-filter=quicken 
+dalvik.vm.dex2oat-threads=8 
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7 
+dalvik.vm.boot-dex2oat-threads=8 
+dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+
 # DRM
 ro.mtk_cta_drm_support=1
 ro.mtk_widevine_drm_l3_support=1
