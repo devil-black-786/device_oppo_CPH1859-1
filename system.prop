@@ -47,6 +47,11 @@ ro.mtk_tetheringipv6_support=1
 # Playstore
 ro.com.google.clientidbase=android-oppo
 
+# ZRAM
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24
+
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.image-dex2oat-filter=quicken 
