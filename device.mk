@@ -287,15 +287,15 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-mediatek \
     android.hardware.wifi@1.0 \
     android.hardware.wifi@1.1 \
-    android.hardware.wifi@1.2 \
-    android.hardware.wifi@1.3
+    android.hardware.wifi@1.2
 
 PRODUCT_PACKAGES += \
-    hostapd \
-    libwpa_client \
-    libwifi-hal \
-    wpa_supplicant \
+    libkeystore-engine-wifi-hidl \
+    libkeystore-wifi-hidl \
     WifiOverlay
+
+PRODUCT_BOOT_JARS += \
+    mtk-wifi-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
