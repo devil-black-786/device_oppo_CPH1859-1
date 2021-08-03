@@ -673,6 +673,16 @@
         <fqname>@1.0::IOiface/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.oppo.hardware.wifi.hostapd</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IOppoHostapd</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IOppoHostapd/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.soter</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
