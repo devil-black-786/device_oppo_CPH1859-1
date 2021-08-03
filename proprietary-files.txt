@@ -452,8 +452,8 @@ vendor/bin/hw/camerahalserver
 # Camera-configs
 vendor/etc/camera/attribute.model
 
-# Charger - From Redmi/begonia/begonia:11/RP1A.200720.011/21.4.28:user/release-keys
-bin/charger:bin/chargeonlymode|bb74c36cee72b1f2e2c8090eb6f21352eba8e83f
+# Charger - from Redmi/begonia/begonia:11/RP1A.200720.011/21.4.28:user/release-keys
+bin/charger:bin/chargeonlymode|958340c6668ebfd7a707bfb4bee0b9dc326abfae
 
 # Configstore
 vendor/bin/hw/android.hardware.configstore@1.1-service
@@ -700,7 +700,6 @@ vendor/lib64/libstagefrighthw.so
 # Mediatek
 vendor/bin/hw/android.hardware.sensors@1.0-service-mediatek
 vendor/bin/hw/android.hardware.usb@1.1-service-mediatek
-vendor/bin/hw/android.hardware.wifi@1.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.dfps@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.log@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.1-service
@@ -710,7 +709,6 @@ vendor/bin/hw/vendor.mediatek.hardware.power@2.1-service
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.sensors@1.0-service-mediatek.rc
 vendor/etc/init/android.hardware.usb@1.1-service-mediatek.rc
-vendor/etc/init/android.hardware.wifi@1.0-service-mediatek.rc
 vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.log@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mms@1.1-service.rc
@@ -881,9 +879,6 @@ vendor/lib64/vendor.mediatek.hardware.radio@3.7.so
 vendor/lib64/vendor.mediatek.hardware.radio@3.8.so
 vendor/lib64/vendor.mediatek.hardware.radio@3.9.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
-vendor/lib64/vendor.mediatek.hardware.wifi.hostapd@2.0.so
-vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so
-vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so
 
 # Neural-networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-apunn
@@ -1880,7 +1875,6 @@ vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so
 vendor/lib64/vendor.oppo.hardware.cryptoeng@1.0.so
 vendor/lib64/vendor.oppo.hardware.ktv@1.0.so
 vendor/lib64/vendor.oppo.hardware.oiface@1.0.so
-vendor/lib64/vendor.oppo.hardware.wifi.supplicant@1.0.so
 vendor/oppo/ck.fs
 vendor/oppo/recovery_rootcheck
 
@@ -1931,8 +1925,6 @@ vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
 vendor/lib/hw/thermal.mt6771.so
 vendor/lib64/hw/thermal.mt6771.so
 
-# Time
-
 # Vibrator
 vendor/bin/hw/android.hardware.vibrator@1.0-service
 vendor/etc/init/android.hardware.vibrator@1.0-service.rc
@@ -1943,6 +1935,30 @@ vendor/lib64/hw/vibrator.default.so
 
 # WiFi
 bin/iwpriv
+
+# WiFi - from full_oppo6771-user 10 QP1A.190711.020 08805472cb0b87b3 release-keys
+-framework/mtk-wifi-service.jar|1b4828542770a0e290b7a4ee328b9215da65dce7
+vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek|d7e8875ddf1728d4245da62e5c6ed5994d1483a5
+vendor/bin/hw/hostapd|7eaa2f5374b1334cafc353b7eba1e07429e55f4a
+vendor/bin/hw/wpa_supplicant|63075c4cf8e650c322a3823ba60b1ec1c64d8ac6
+vendor/bin/hostapd_cli|8e705105b231ae27cc15a13cb83ae5a4674b4bff
+vendor/bin/stp_dump3|c31fc952a790bc6d5f77b947fb98b8a464ee6ad2
+vendor/bin/wlan_assistant|c8b12ac856e0da3d6258e5d29a12c70ae76e3851
+vendor/bin/wmt_launcher|6063b19d7cec3bd8f88f537880a201ded0f1e2a8
+vendor/bin/wmt_loader|3277c9d93e8aa54baec2cc90b2ac7fd48dc74941
+vendor/bin/wpa_cli|446020414cc6d7bdb0a5d5f4ce9fad195b87452a
+vendor/etc/init/android.hardware.wifi@1.0-service-lazy-mediatek.rc|bd3726847a0068d4e252b2d4f5c168b38b982074
+vendor/etc/init/hostapd.android.rc|0f8128bb83c4cbe80760f1a040960cfe439d2d6f
+vendor/etc/init/wlan_assistant.rc|32ed0c40b58acc747c83bf467dde7f72634e9732
+vendor/lib/libwpa_client.so|7575a994c870c0db2dd502a445b8addc9f30624e
+vendor/lib64/libwifitest.so|c932da135fd7090c9a3e283a86f0561d26266de1
+vendor/lib64/libwifi-hal.so|23c4e4338ec0e6d24b15dbca083a92f411b0aab5
+vendor/lib64/libwpa_client.so|1d2f05cfac6be8e880b82bb12a59b5ec295e3736
+vendor/lib64/vendor.mediatek.hardware.wifi.hostapd@2.0.so|306ffbe86d75ad3879897d07e314a335613cb95a
+vendor/lib64/vendor.oppo.hardware.wifi.hostapd@1.0.so|ab31c6f3b5e9cbc50c91db1fd4e4d0d3c700cef4
+vendor/lib64/vendor.oppo.hardware.wifi.supplicant@1.0.so|cab8eec6b954ad2d9a44c39cb819fd6a129655b9
+vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so|71c4ece7af55685c2b15c6a35ce892841a243e65
+vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so|270d0e0d4173b8e3d7f2e1b11a43143e0852904d
 
 # Misc
 vendor/app/mcRegistry/020f0000000000000000000000000000.drbin
@@ -2021,11 +2037,8 @@ vendor/bin/volte_imsm_93
 vendor/bin/volte_stack
 vendor/bin/volte_ua
 vendor/bin/wfca
-vendor/bin/wlan_assistant
 vendor/bin/wmt_concurrency
 vendor/bin/wmt_fdb
-vendor/bin/wmt_launcher
-vendor/bin/wmt_loader
 vendor/bin/wmt_loopback
 vendor/data/misc/ProjectConfig.mk
 vendor/etc/.tp/.ht120.mtc
@@ -2094,7 +2107,6 @@ vendor/etc/init/vendor.trustonic.tee@1.0-service.rc
 vendor/etc/init/vendor.trustonic.teeregistry@1.0-service.rc
 vendor/etc/init/vendor_engineermode.rc
 vendor/etc/init/vendor_transfer.rc
-vendor/etc/init/wlan_assistant.rc
 vendor/etc/ipsec/ipsec.conf
 vendor/etc/ipsec/ipsec.d/cacerts/Entrust.net_Certification_Authority_2048.cer
 vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_PCA_G3_Root.der
@@ -2429,7 +2441,6 @@ vendor/lib64/libvia-ril.so
 vendor/lib64/libvoh264enc.so
 vendor/lib64/libvpu.so
 vendor/lib64/libwapi.so
-vendor/lib64/libwifitest.so
 vendor/lib64/libwo.so
 vendor/lib64/lib_iir.so
 vendor/lib64/lib_speech_enh.so

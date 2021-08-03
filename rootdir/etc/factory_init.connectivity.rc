@@ -40,11 +40,6 @@ service wmt_launcher /vendor/bin/wmt_launcher -p /vendor/firmware/
     user system
     group system
 
-service wmt_check_patch /system/bin/wmt_check_patch
-    user system
-    group system
-    class late_start
-
 # GPS
 #service mnld /vendor/bin/mnld
 #    class main
@@ -56,6 +51,11 @@ service wmt_check_patch /system/bin/wmt_check_patch
 #    user system
 #    group gps system radio
 #    class main
+
+service wlan_assistant /vendor/bin/wlan_assistant
+    class main
+    user wifi
+    group system gps inet
 
 #
 # Connectivity related services (End)
@@ -90,4 +90,3 @@ on property:vendor.connsys.driver.ready=yes
 #
 # Connectivity related kernel objects (End)
 #
-
