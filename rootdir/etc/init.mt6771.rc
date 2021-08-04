@@ -1180,6 +1180,9 @@ on boot
     # Update touchscreen firmware
     write /proc/touchpanel/tp_fw_update 1
 
+# OTG
+    write /sys/devices/platform/odm/odm:oppo_charger/power_supply/usb/otg_switch 1
+
 #set the property of persiste.radio.reset_on_switch
 setprop persist.radio.reset_on_switch false
 #end
