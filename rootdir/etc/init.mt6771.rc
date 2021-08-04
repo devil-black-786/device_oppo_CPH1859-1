@@ -1306,6 +1306,10 @@ on property:ro.vendor.oppo.product.device=*
     setprop ro.product.vendor.device ${ro.vendor.oppo.product.device}
 #endif
 
+# Disable AOSP RIL if MTK RIL is up
+on property:vendor.ril.mtk=1
+    stop vendor.ril-daemon
+
 service logcatd /system/bin/logcat -b all -f /data/misc/logd/logcat
 class main
 user root
